@@ -1,3 +1,4 @@
+@use 'sass:map';
 @use '../partials/colors' as *;
 
 @mixin between{
@@ -10,7 +11,7 @@
     padding: 1em;
     background-color: $bgcolor;
     border: none;
-    color: map-get($colors, font);
+    color: map.get($colors, font);
     border-radius: 5px; 
     cursor: pointer;
     font-size: 0.6em;

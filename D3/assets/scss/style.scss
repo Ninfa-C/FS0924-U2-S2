@@ -1,3 +1,4 @@
+@use 'sass:map';
 @use 'partials/reset';
 @use 'mixin/mixins.scss';
 @use 'partials/colors' as *;
@@ -7,7 +8,7 @@
 
 
 header {
-    background-color: map-get($colors, bgHero);
+    background-color: map.get($colors, bgHero);
     padding: 1em 10vw;
     
 
@@ -26,11 +27,11 @@ header {
 
             a {
                 text-decoration: none;
-                color: map-get($colors, font);
+                color: map.get($colors, font);
                 font-size: 0.7em;
 
                 &:hover {
-                    color: map-get($colors, orangeBtn);
+                    color: map.get($colors, orangeBtn);
                 }
             }
         }
@@ -38,7 +39,7 @@ header {
 
     .hero {
         display: flex;
-        color: map-get($colors, font);
+        color: map.get($colors, font);
         
 
         h1{
