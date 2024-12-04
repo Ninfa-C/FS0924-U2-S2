@@ -1,0 +1,86 @@
+@use 'partials/reset';
+@use 'mixin/mixins.scss';
+@use 'partials/colors' as *;
+@use 'partials/buttons';
+
+
+
+header {
+    background-color: map-get($colors, bgHero);
+    padding: 1em 10vw;
+    
+
+    nav {
+        @include mixins.between;
+
+        p {
+            font-weight: 800;
+        }
+
+        ul {
+            @include mixins.between;
+            list-style: none;
+            width: 15vw;
+            
+
+            a {
+                text-decoration: none;
+                color: map-get($colors, font);
+                font-size: 0.7em;
+
+                &:hover {
+                    color: map-get($colors, orangeBtn);
+                }
+            }
+        }
+    }
+
+    .hero {
+        display: flex;
+        color: map-get($colors, font);
+
+        h1{
+            color: black;
+            font-size: 4em;
+            font-weight: 800;
+            letter-spacing: -5px;
+            line-height: 1;
+            opacity: 70%;
+            
+        }
+        p{
+            opacity: 70%;
+        }
+
+        .imageContainer {
+            width: 35vw;
+            height: 28vw;
+            overflow: hidden;
+            transform: translatey(5rem);
+            @include mixins.floating;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+main {
+    margin: 6em 1em;
+    @include mixins.between;
+    .imageContainer {
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        @include mixins.floating;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

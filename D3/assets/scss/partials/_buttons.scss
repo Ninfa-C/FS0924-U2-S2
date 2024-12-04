@@ -1,0 +1,12 @@
+@use 'colors' as *;
+@use '../mixin/mixins.scss';
+
+.btn1{
+    @include mixins.btn(map-get($colors, blueBtn));
+}
+.btn2{
+    @include mixins.btn(map-get($colors, orangeBtn));
+}
+.btn3{
+    @include mixins.btn(map-get($colors, greenBtn));
+}
