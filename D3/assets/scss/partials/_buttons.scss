@@ -1,12 +1,21 @@
 @use 'colors' as *;
 @use '../mixin/mixins.scss';
+@use 'animation' as *;
 
-.btn1{
+.btn1 {
     @include mixins.btn(map-get($colors, blueBtn));
+    animation: fadeInDown 1s ease-out forwards;
+    animation-delay: 0.6s;
 }
-.btn2{
+
+.btn2 {
     @include mixins.btn(map-get($colors, orangeBtn));
+    animation: fadeInDown 1s ease-out forwards;
+    animation-delay: 0.9s;
 }
-.btn3{
+
+.btn3 {
     @include mixins.btn(map-get($colors, greenBtn));
+    animation: fadeInDown 1s ease-out forwards;
+    animation-delay: 1.2s;
 }

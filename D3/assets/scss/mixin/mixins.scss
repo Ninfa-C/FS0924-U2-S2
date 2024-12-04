@@ -6,6 +6,7 @@
 }
 
 @mixin btn($bgcolor){
+    opacity: 0%;
     padding: 1em;
     background-color: $bgcolor;
     border: none;

@@ -1,0 +1,23 @@
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px); // Salita iniziale
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);     // Posizione normale
+    }
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(15rem); // Salita iniziale
+    }
+    to {
+        opacity: 1;
+        transform: translateY(5rem);     // Posizione normale
+    }
+}
