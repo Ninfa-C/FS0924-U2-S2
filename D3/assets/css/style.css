@@ -95,7 +95,11 @@ header nav ul a:hover {
 }
 header .hero {
   display: flex;
+  justify-content: space-between;
   color: #f4f4f4;
+}
+header .hero .title {
+  width: 55%;
 }
 header .hero h1 {
   opacity: 0;
@@ -113,7 +117,7 @@ header .hero p {
   animation-delay: 0.3s;
 }
 header .hero .imageContainer {
-  width: 35vw;
+  width: 25vw;
   height: 28vw;
   overflow: hidden;
   transform: translatey(5rem);
